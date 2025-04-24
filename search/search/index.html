@@ -1,0 +1,169 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <h1>Google</h1>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .top-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .top-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #202124;
+        }
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+            width: 100%;
+        }
+        .search-bar {
+            width: 600px;
+            padding: 15px 20px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .search-buttons {
+            display: flex;
+        }
+        .search-button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            color: #3c4043;
+            font-size: 14px;
+            padding: 12px 24px;
+            border-radius: 4px;
+            margin: 8px;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+            border-color: #dadce0;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-links">
+        <a href="imagenes.html">Image Search</a>
+        <a href="avanzada.html">Advanced Search</a>
+    </div>
+    <div class="search-container">
+        <input type="text" class="search-bar">
+        <div class="search-buttons">
+            <button class="search-button" onclick="realizarBusqueda('https://www.google.com/search?q=' + document.querySelector('.search-bar').value)">Google Search</button>
+            <button class="search-button" onclick="location.href='https://www.google.com/search?q=' + document.querySelector('.search-bar').value + '&btnI=1'">¡I'm lucky!</button>
+        </div>
+    </div>
+    <script>
+        function realizarBusqueda(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
+
+
+Image search
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Image Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .top-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .top-links a {
+            text-decoration: none;
+            color: #202124;
+        }
+        .search-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+            width: 100%;
+        }
+        .search-bar {
+            width: 600px;
+            padding: 15px 20px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .search-button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            color: #3c4043;
+            font-size: 14px;
+            padding: 12px 24px;
+            border-radius: 4px;
+            margin: 8px;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+            border-color: #dadce0;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="top-links">
+        <a href="index.html" style="position: absolute; top: 37px; right: 20px;">Google Search</a>
+    </div>
+
+
+    </div>
+    </div>
+    <div class="search-container">
+        <input type="text" class="search-bar">
+        <button class="search-button" onclick="realizarBusqueda('https://www.google.com/search?tbm=isch&q=' + document.querySelector('.search-bar').value)">Image Search</button>
+    </div>
+    <script>
+        function realizarBusqueda(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
+
+
